@@ -1,0 +1,20 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "P3 mission",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ffedronic/Felix_Fedronic_3_11042021.git"
+  },
+  "author": "Fedronic Felix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ffedronic/Felix_Fedronic_3_11042021/issues"
+  },
+  "homepage": "https://github.com/Ffedronic/Felix_Fedronic_3_11042021#readme"
+}

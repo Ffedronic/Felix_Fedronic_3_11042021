@@ -1,0 +1,139 @@
+/*police*/
+/*color*/
+/*title font size*/
+/*header css value*/
+/*border*/
+/*.border {
+	border: 3px solid black;
+    margin: 1px;
+}
+
+.red {
+    border-color: red;
+}
+
+.green {
+    border-color: green;
+}
+
+.blue {
+    border-color: blue;
+}
+
+.orange {
+    border-color:orange;
+}
+
+.magenta {
+    border-color: darkmagenta;
+}
+*/
+/*--main style--*/
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "cursive";
+}
+
+.header-homepage button {
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  padding: 15px 20px 15px 20px;
+}
+
+.header-homepage__logo {
+  text-align: center;
+  padding: 25px 0px 10px 0px;
+  box-shadow: 0px 1px 10px 0px grey;
+  margin: 0px 0px 5px 0px;
+}
+.header-homepage__logo img {
+  width: 150px;
+}
+.header-homepage__location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px 10px 0px;
+  background-color: #E5E5E5;
+}
+.header-homepage__location i {
+  font-size: 1em;
+  margin: 0px 15px 0px 0px;
+}
+.header-homepage__location__town {
+  font-size: 0.9em;
+}
+.header-homepage__presentation {
+  padding: 35px 25px 35px 25px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+.header-homepage__presentation__title {
+  font-size: 1.5em;
+  margin: 0px 0px 15px 0px;
+  padding: 0px 30px 0px 30px;
+}
+.header-homepage__presentation__details {
+  margin: 0px 0px 25px 0px;
+}
+
+.nav-menu {
+  padding: 35px 20px 35px 20px;
+}
+.nav-menu__title {
+  font-size: 1.5em;
+  margin: 0px 0px 15px 0px;
+}
+.nav-menu__list {
+  display: flex;
+  flex-direction: column;
+}
+.nav-menu__list__item {
+  display: flex;
+  align-items: baseline;
+}
+.nav-menu__list__item :hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+.nav-menu__list__item__number {
+  font-size: 1em;
+  color: white;
+  background-color: #9356DC;
+  padding: 5px 10px 5px 10px;
+  border-radius: 50%;
+  z-index: 2;
+}
+.nav-menu__list__item__details {
+  display: flex;
+  align-items: center;
+  padding: 25px 25px 25px 35px;
+  border-radius: 20px;
+  width: 100%;
+  margin: 0px 0px 35px -15px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.nav-menu__list__item__details i {
+  color: grey;
+  margin: 0px 25px 0px 0px;
+  font-size: 1.3em;
+}
+.nav-menu__list__item__details p {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

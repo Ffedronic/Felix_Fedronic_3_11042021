@@ -8,46 +8,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/26697731b2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
     <title>Oh my food !!!</title>
 </head>
     <body>
-        <header>
-            <img src="/images/logo/ohmyfood@2x.svg" alt="Logo">
-            <section>
-                <i class="fas fa-map-marker-alt"></i>
-                <h2>Paris, Belleville</h2>
+        <header class="border header-homepage">
+            <div class="border red header-homepage__logo">
+                <img src="/images/logo/ohmyfood@2x.svg" alt="Logo">
+            </div>
+            <section class="border red header-homepage__location">
+                <i class="fas fa-map-marker-alt border green"></i>
+                <h1 class=" header-homepage__location__town border green">Paris, Belleville</h2>
             </section>
-            <article>
-                <h3>Réservez le menu qui vous convient</h3>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <button type="submit">Explorer nos restaurants</button>
+            <article class="border red header-homepage__presentation">
+                <h2 class="border green header-homepage__presentation__title">Réservez le menu qui vous convient</h3>
+                <p class="border green header-homepage__presentation__details">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <button type="button" class="border green">Explorer nos restaurants</button>
             </article>
-            <nav>
-                <p>Fonctionnement</p>
-                <ul>
-                    <li>
-                        <a href="">
-                            <p>1</p>
-                            <div>
+            <nav class="nav-menu border red">
+                <h2 class="nav-menu__title border green">Fonctionnement</h2>
+                <ul class="nav-menu__list border green">
+                    <li class="border blue">
+                        <a href="" class="nav-menu__list__item border orange">
+                            <p class="nav-menu__list__item__number border magenta">1</p>
+                            <div class="nav-menu__list__item__details border magenta">
                                 <i class="fas fa-mobile-alt"></i>
                                 <p>Choisissez un restaurant</p>
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <p>2</p>
-                            <div>
+                    <li class="border blue">
+                        <a href="" class="nav-menu__list__item border orange">
+                            <p class="nav-menu__list__item__number border magenta">2</p>
+                            <div class="nav-menu__list__item__details border magenta">
                                 <i class="fas fa-list-ul"></i>
                                 <p>Composez votre menu</p>
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <p>2</p>
-                            <div>
+                    <li class="border blue">
+                        <a href="" class="nav-menu__list__item border orange">
+                            <p class="nav-menu__list__item__number border magenta">3</p>
+                            <div class="nav-menu__list__item__details border magenta">
                                 <i class="fas fa-store"></i>
                                 <p>Dégustez au restaurant</p>
                             </div>
@@ -56,7 +59,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="border">
             <h3>restaurants</h3>
             <article>
                 <a href="/html/menu_1.html">
@@ -117,7 +120,7 @@
                 </a>
             </article>
         </main>
-        <footer>
+        <footer class="border">
             <p>ohmyfood</p>
             <nav>
                 <ul>

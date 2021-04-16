@@ -1,0 +1,42 @@
+/*border*/
+
+/*.border {
+	border: 3px solid black;
+    margin: 1px;
+}
+
+.red {
+    border-color: red;
+}
+
+.green {
+    border-color: green;
+}
+
+.blue {
+    border-color: blue;
+}
+
+.orange {
+    border-color:orange;
+}
+
+.magenta {
+    border-color: darkmagenta;
+}
+*/
+
+/*--main style--*/
+
+* {
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $policeTexte, "cursive" ;
+}

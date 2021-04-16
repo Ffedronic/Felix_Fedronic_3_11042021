@@ -1,0 +1,36 @@
+.header-homepage {
+    &__logo {
+        text-align: $header__logo-text-align ;
+        padding: $header__logo-padding ;
+        box-shadow: $header__logo-shadow;
+        margin: $header__logo-margin ;
+        img {
+            width: $header__logo-img-size ;
+        }
+    }
+    &__location {
+        @include location-display ;
+        background-color : $header__location-background-color ;
+        i {
+            font-size: $header__location-i-font-size ;
+            margin: $header__location-i-margin ;
+        }
+        &__town {
+            font-size: $header__location__town-font-size;
+        }
+    }
+    &__presentation {
+        padding: $header__presentation-padding;
+        text-align: $header__presentation-text-align;
+        background-color: $header__presentation-background-color;
+        &__title {
+            font-size: $header__presentation__title-font-size;
+            margin: $header__presentation__title-margin;
+            padding: $header__presentation__title-padding ;
+        }
+        &__details {
+            margin: $header__presentation__details-margin;
+        }
+    }
+
+}

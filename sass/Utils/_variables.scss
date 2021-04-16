@@ -1,0 +1,34 @@
+/*police*/
+$policeTexte : "Roboto" ;
+$policeTitre : "Shrikhand" ;
+/*color*/
+$colour-primary : #9356DC ;
+$colour-secondary : #FF79DA ;
+$colour-tertiary : #99E2D0 ;
+$colour-quaternary : grey ;
+$colour-background-primary : #E5E5E5 ;
+$colour-background-secondary : #f7f7f7 ; 
+/*title font size*/
+$title-font-size : 1.5em ;
+$title-margin-default : 0px 0px 15px 0px ;
+/*header css value*/
+$header__logo-text-align : center ;
+$header__logo-margin : 0px 0px 5px 0px ;
+$header__logo-padding : 25px 0px 10px 0px ;
+$header__logo-shadow : 0px 1px 10px 0px $colour-quaternary ;
+$header__logo-img-size : 150px ;
+$header__location-background-color : $colour-background-primary ;
+$header__location-i-font-size : 1em ;
+$header__location-i-margin : 0px 15px 0px 0px ;
+$header__location__town-font-size : 0.9em ;
+$header__presentation-padding : 35px 25px 35px 25px ;
+$header__presentation-text-align : center ;
+$header__presentation-background-color : $colour-background-secondary ;
+$header__presentation__title-font-size : $title-font-size ;
+$header__presentation__title-margin : $title-margin-default ;
+$header__presentation__title-padding : 0px 30px 0px 30px ;
+$header__presentation__details-margin : 0px 0px 25px 0px ;
+$nav-menu-padding : 35px 20px 35px 20px ;
+$nav-menu__title-font-size : $title-font-size ;
+$nav-menu__title-margin : $title-margin-default ;
+$nav-menu__list__item__details-background-color : $colour-background-secondary ;
