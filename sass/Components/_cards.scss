@@ -1,0 +1,40 @@
+.restaurant-list__card {
+    position: relative;
+    background-color: $restaurant-list__card-background-color;
+    box-shadow: $restaurant-list__card-box-shadow;
+    border-radius: $restaurant-list__card-border-radius;
+    margin: $restaurant-list__card-margin;
+    overflow: hidden;
+    &__image {
+        height: $restaurant-list__card_image-height;
+        &__button {
+            display: inline-block;
+            position: absolute;
+            top : 15px ;
+            right: 15px;
+            color:rgb(119, 187, 119);
+            background-color: lighten($color: rgb(119, 187, 119), $amount: 25%);
+            padding: 5px 15px 5px 15px;
+            border-radius: 3px;
+        }
+        img {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            object-fit : cover ;
+            object-position: 50% 60% ;
+        }
+    }
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        h4 {
+            font-size: 1em;
+            margin: 0px 0px 10px 0px;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+}
