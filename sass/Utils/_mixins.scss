@@ -1,2 +1,16 @@
 
 
+@mixin flex-direction-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-align-items-baseline {
+    display: flex;
+    align-items: baseline;
+}
+
+@mixin flex-align-items-center {
+    display: flex;
+    align-items: center;
+}

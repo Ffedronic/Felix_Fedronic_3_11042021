@@ -4,48 +4,45 @@
         font-size: $nav-menu__title-font-size;
         margin: $nav-menu__title-margin;
     }
-    &__list {
-        display: flex;
-        flex-direction: column;
+    &__list{
+        @include flex-direction-column ;
         &__item {
-            display: flex;
-            align-items: baseline;
+            @include flex-align-items-baseline ;
             &__number {
-                font-size: 1em ;
-                color: white ;
-                background-color: $colour-primary;
-                padding: 5px 10px 5px 10px ;
-                border-radius: 50%;
-                z-index: 2 ;
+                font-size: $nav-menu__list__item__number-font-size ;
+                color: $nav-menu__list__item__number-color ;
+                background-color: $nav-menu__list__item__number-background-color;
+                padding: $nav-menu__list__item__number-padding ;
+                border-radius: $nav-menu__list__item__number-border-radius;
+                z-index: $nav-menu__list__item__number-z-index;
             }
             &__details {
-                display : flex ;
-                align-items: center;
-                padding: 25px 25px 25px 35px;
-                border-radius: 20px;
-                width: 100%;
-                margin : 0px 0px 35px -15px;            
-                background-color: $nav-menu__list__item__details-background-color;
-                box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
-                i {
-                    color : $colour-quaternary ;
-                    margin: 0px 25px 0px 0px;
-                    font-size: 1.3em;
+                z-index: $nav-menu__list__item__details-z-index;
+                width: $nav-menu__list__item__details-width ;
+                a {
+                    @include flex-align-items-center ;
+                    padding: $nav-menu__list__item__details_a-padding;
+                    border-radius: $nav-menu__list__item__details_a-border-radius;
+                    margin : $nav-menu__list__item__details_a-margin;            
+                    box-shadow: $nav-menu__list__item__details_a-box-shadow;
+                    i {
+                        color : $nav-menu__list__item__details_a_icon-color ;
+                        margin: $nav-menu__list__item__details_a_icon-margin;
+                        font-size: $nav-menu__list__item__details_a_icon-font-size;
+                    }
+                    h4 {
+                        font-size: $nav-menu__list__item__details_a_title-font-size;
+                        font-weight: $nav-menu__list__item__details_a_title-font-weight ;
+                    }
                 }
-                h3 {
-                    font-size: 1em;
-                    font-weight: bold;
-                }
-            }
-            :hover {
-                background-color: rgba($colour-primary, 0.2);
-                i {
-                    color: $colour-primary;
-                }
-                h3 {
-                    background-color: unset;   
+                :hover {
+                    background-color: $nav-menu__list__item__details_a_hover-background-color;
+                    i {
+                        color: $nav-menu__list__item__details_a_hover_icon-color ;
+                    }
                 }
             }
         }
     }
+    
 }

@@ -11,16 +11,27 @@ $colour-background-secondary : #f7f7f7 ;
 /*title font size*/
 $title-font-size : 1.5em ;
 $title-margin-default : 0px 0px 15px 0px ;
+/*button*/
+$button-font-weight: bold;
+$button-border: none;
+$button-border-radius: 25px;
+$button-color: white;
+$button-background: linear-gradient($colour-secondary, $colour-primary) ;
+$button-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+$button-padding: 15px 20px 15px 20px;    
 /*header css value*/
+/*logo*/
 $header__logo-text-align : center ;
 $header__logo-margin : 0px 0px 5px 0px ;
 $header__logo-padding : 25px 0px 10px 0px ;
 $header__logo-shadow : 0px 1px 10px 0px $colour-quaternary ;
 $header__logo-img-size : 150px ;
+/*location*/
 $header__location-background-color : $colour-background-primary ;
-$header__location-i-font-size : 1em ;
-$header__location-i-margin : 0px 15px 0px 0px ;
-$header__location__town-font-size : 0.9em ;
+$header__location-icon-font-size : 1em ;
+$header__location-icon-margin : 0px 15px 0px 0px ;
+$header__location__town-font-size : 1em ;
+/*presentation*/
 $header__presentation-padding : 35px 25px 35px 25px ;
 $header__presentation-text-align : center ;
 $header__presentation-background-color : $colour-background-secondary ;
@@ -28,7 +39,30 @@ $header__presentation__title-font-size : $title-font-size ;
 $header__presentation__title-margin : $title-margin-default ;
 $header__presentation__title-padding : 0px 30px 0px 30px ;
 $header__presentation__details-margin : 0px 0px 25px 0px ;
+$header__presentation__details-font-size: 1em;
+/*nav menu*/
 $nav-menu-padding : 35px 20px 35px 20px ;
+/*title*/
 $nav-menu__title-font-size : $title-font-size ;
 $nav-menu__title-margin : $title-margin-default ;
+/*items*/
+$nav-menu__list__item__number-font-size: 1em ;
+$nav-menu__list__item__number-color: white ;
+$nav-menu__list__item__number-background-color: $colour-primary;
+$nav-menu__list__item__number-padding: 5px 10px 5px 10px ;
+$nav-menu__list__item__number-border-radius: 50%;
+$nav-menu__list__item__number-z-index: 2;
 $nav-menu__list__item__details-background-color : $colour-background-secondary ;
+$nav-menu__list__item__details-z-index: 1;
+$nav-menu__list__item__details-width: 100%;
+$nav-menu__list__item__details_a-padding: 25px 25px 25px 35px;
+$nav-menu__list__item__details_a-border-radius: 20px;
+$nav-menu__list__item__details_a-margin : 0px 0px 35px -15px;            
+$nav-menu__list__item__details_a-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+$nav-menu__list__item__details_a_icon-color : $colour-quaternary ;
+$nav-menu__list__item__details_a_icon-margin: 0px 25px 0px 0px;
+$nav-menu__list__item__details_a_icon-font-size: 1.3em;
+$nav-menu__list__item__details_a_title-font-size: 1em;
+$nav-menu__list__item__details_a_title-font-weight: bold;
+$nav-menu__list__item__details_a_hover-background-color: lighten($colour-primary, 30%);
+$nav-menu__list__item__details_a_hover_icon-color: $colour-primary;
