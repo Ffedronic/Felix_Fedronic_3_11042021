@@ -9,7 +9,10 @@
         }
     }
     &__location {
-        @include location-display ;
+        display: flex;
+        align-items :center;
+        justify-content: center;
+        padding: 10px 0px 10px 0px;
         background-color : $header__location-background-color ;
         i {
             font-size: $header__location-i-font-size ;
