@@ -1,40 +1,63 @@
 .restaurant-list__card {
     position: relative;
-    background-color: $restaurant-list__card-background-color;
-    box-shadow: $restaurant-list__card-box-shadow;
-    border-radius: $restaurant-list__card-border-radius;
     margin: $restaurant-list__card-margin;
-    overflow: hidden;
-    &__image {
-        height: $restaurant-list__card_image-height;
-        &__button {
-            display: inline-block;
-            position: absolute;
-            top : 15px ;
-            right: 15px;
-            color:rgb(119, 187, 119);
-            background-color: lighten($color: rgb(119, 187, 119), $amount: 25%);
-            padding: 5px 15px 5px 15px;
-            border-radius: 3px;
+    &__main {
+        overflow: hidden;
+        background-color: $restaurant-list__card__main-background-color;
+        border-radius: $restaurant-list__card__main-border-radius;
+        box-shadow: $restaurant-list__card__main-box-shadow;
+        &__image {
+            position: relative;
+            height: $restaurant-list__card__main__image-height;
+            &__button {
+                position: absolute;
+                font-weight: bold;
+                top: $restaurant-list__card__main__image__button-top ;
+                right: $restaurant-list__card__main__image__button-right ;
+                color :$restaurant-list__card__main__image__button-color ;
+                padding: $restaurant-list__card__main__image__button-padding ;
+                border-radius: $restaurant-list__card__main__image__button-color ;
+                font-size: $restaurant-list__card__main__image__button-font-size ;
+                background-color : $restaurant-list__card__main__image__button-background-color ;
+            }
+            img {
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 60%;               
+            }
         }
-        img {
-            box-sizing: border-box;
-            width: 100%;
-            height: 100%;
-            object-fit : cover ;
-            object-position: 50% 60% ;
-        }
+        &__body {
+            padding: 15px;
+            h4 {
+                font-size: 1em;
+                margin: 0px 0px 5px 0px;
+            }
+            p {
+                font-size: 1em;
+            }
+        }      
     }
-    &__body {
-        display: flex;
-        justify-content: space-between;
-        padding: 15px;
-        h4 {
-            font-size: 1em;
-            margin: 0px 0px 10px 0px;
+    &__heart {
+        position: absolute ;
+        bottom: 35px;
+        right: 25px;
+        &__empty {
+            font-size: 1.5em;
         }
-        p {
-            font-size: 1em;
+        &__fullfilled{
+            position: absolute;
+            top: -1.5px;
+            left: 0px;
+            font-size: 1.5em;
+            i {
+                color: $colour-primary;
+                opacity: 0;
+            }
+            :hover {
+                opacity: unset;
+            }
         }
     }
 }
