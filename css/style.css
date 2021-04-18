@@ -89,10 +89,10 @@ body {
   background-color: #89ffd7;
 }
 .restaurant-list__card__main__image img {
+  object-fit: cover;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   object-position: 50% 60%;
 }
 .restaurant-list__card__main__body {

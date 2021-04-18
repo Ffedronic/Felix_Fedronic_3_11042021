@@ -21,21 +21,21 @@
                 background-color : $restaurant-list__card__main__image__button-background-color ;
             }
             img {
-                box-sizing: border-box;
-                width: 100%;
-                height: 100%;
                 object-fit: cover;
-                object-position: 50% 60%;               
+                box-sizing: border-box;
+                width: $restaurant-list__card__main__image__img-width ;
+                height: $restaurant-list__card__main__image__img-height ;
+                object-position: $restaurant-list__card__main__image__img-object-position ;               
             }
         }
         &__body {
-            padding: 15px;
+            padding: $restaurant-list__card__main__body-padding ;
             h4 {
-                font-size: 1em;
-                margin: 0px 0px 5px 0px;
+                font-size: $restaurant-list__card__main__body__title--font-size ;
+                margin: $restaurant-list__card__main__body__title--margin ;
             }
             p {
-                font-size: 1em;
+                font-size: $restaurant-list__card__main__body__description--font-size ;
             }
         }      
     }
