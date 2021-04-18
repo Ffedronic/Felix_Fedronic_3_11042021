@@ -1,0 +1,29 @@
+.footer {
+    background-color: $footer--background-color ;
+    padding: $footer--padding ;
+    &__title {
+        font-family: $footer__title--font-family ;
+        font-size: $footer__title--font-size ;
+        color: $footer__title--color ;
+        margin: $footer__title--margin ;
+    }
+    &__menu {
+        &__item {
+            margin: $footer__menu__item--margin ;
+            a {
+                display: flex;
+                align-items: flex-end;
+            }
+            &__icon {
+                color: $footer__menu__item__icon--color ;
+                font-size: $footer__menu__item__icon--font-size ;
+                margin: $footer__menu__item__icon--margin ;
+            }
+            &__description {
+                color : $footer__menu__item__description--color ;
+                font-size: $footer__menu__item__description--font-size ;
+            }
+
+        }
+    }
+}

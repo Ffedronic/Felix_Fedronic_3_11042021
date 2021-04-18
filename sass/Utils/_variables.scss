@@ -1,21 +1,21 @@
-/**police**/
+/***police***/
 $policeTexte : "Roboto" ;
 $policeTitre : "Shrikhand" ;
-/**color**/
+/***color***/
 $colour-primary : #9356DC ;
 $colour-secondary : #FF79DA ;
 $colour-tertiary : #99E2D0 ;
 $colour-quaternary : grey ;
 $colour-background-primary : #E5E5E5 ;
 $colour-background-secondary : #f7f7f7 ; 
-/**box-shadow**/
+/***box-shadow***/
 $box-shadow-default : 0px 0px 15px 0px rgba(0,0,0,0.3);
-/**border-radius**/
+/***border-radius***/
 $border-radius-default : 20px ; 
-/**title font size**/
+/***title font size***/
 $title-font-size : 1.5em ;
 $title-margin-default : 0px 0px 25px 0px ;
-/**button**/
+/***button***/
 $button-font-weight: bold;
 $button-border: none;
 $button-border-radius: $border-radius-default;
@@ -23,19 +23,19 @@ $button-color: white;
 $button-background: linear-gradient($colour-secondary, $colour-primary) ;
 $button-box-shadow: $box-shadow-default ;
 $button-padding: 15px 20px 15px 20px;    
-/**header css value**/
-/*logo*/
+/***header css value***/
+/**logo**/
 $header__logo-text-align : center ;
 $header__logo-margin : 0px 0px 5px 0px ;
 $header__logo-padding : 25px 0px 10px 0px ;
 $header__logo-shadow : 0px 1px 10px 0px $colour-quaternary ;
 $header__logo-img-size : 150px ;
-/*location*/
+/**location**/
 $header__location-background-color : $colour-background-primary ;
 $header__location-icon-font-size : 1em ;
 $header__location-icon-margin : 0px 15px 0px 0px ;
 $header__location__town-font-size : 1em ;
-/*presentation*/
+/**presentation**/
 $header__presentation-padding : 35px 25px 35px 25px ;
 $header__presentation-text-align : center ;
 $header__presentation-background-color : $colour-background-secondary ;
@@ -44,7 +44,7 @@ $header__presentation__title-margin : $title-margin-default ;
 $header__presentation__title-padding : 0px 30px 0px 30px ;
 $header__presentation__details-margin : 0px 0px 25px 0px ;
 $header__presentation__details-font-size: 1em;
-/*nav menu*/
+/**nav menu**/
 $nav-menu-padding : 35px 20px 35px 20px ;
 /*title*/
 $nav-menu__title-font-size : $title-font-size ;
@@ -77,10 +77,11 @@ $restaurant-list-padding : 35px 20px 35px 20px ;
 $restaurant-list__title-font-size :$title-font-size ;
 $restaurant-list__title-margin : $title-margin-default ;
 /*card*/
+$restaurant-list__card-margin :$title-margin-default ;
+/*card main*/
 $restaurant-list__card__main-background-color : white ;
 $restaurant-list__card__main-border-radius : $border-radius-default ;
 $restaurant-list__card__main-box-shadow : $box-shadow-default ;
-$restaurant-list__card-margin :$title-margin-default ;
 $restaurant-list__card__main__image-height : 190px ;
 $restaurant-list__card__main__image__button-top : 15px;
 $restaurant-list__card__main__image__button-right : 15px;
@@ -96,3 +97,23 @@ $restaurant-list__card__main__body-padding : 15px;
 $restaurant-list__card__main__body__title--font-size : 1em;
 $restaurant-list__card__main__body__title--margin : 0px 0px 5px 0px;
 $restaurant-list__card__main__body__description--font-size : 1em;
+/*card heart*/
+$restaurant-list__card__heart--bottom : 35px;
+$restaurant-list__card__heart--right : 25px;
+$restaurant-list__card__heart__empty--font-size : 1.5em;
+$restaurant-list__card__heart__fullfilled--top : -1.5px;
+$restaurant-list__card__heart__fullfilled--left : 0px;
+$restaurant-list__card__heart__fullfilled--font-size : 1.5em;
+/**footer**/
+$footer--background-color : rgb(44, 44, 44);
+$footer--padding : 35px 20px 35px 20px;
+$footer__title--font-family : $policeTitre ;
+$footer__title--font-size : 1.2em;
+$footer__title--color : white;
+$footer__title--margin : 0px 0px 35px 0px;
+$footer__menu__item--margin : 0px 0px 10px 0px;
+$footer__menu__item__icon--color : white;
+$footer__menu__item__icon--font-size : 1.1em;
+$footer__menu__item__icon--margin : 0px 10px 0px 0px;
+$footer__menu__item__description--color : white ;
+$footer__menu__item__description--font-size : 0.9em;

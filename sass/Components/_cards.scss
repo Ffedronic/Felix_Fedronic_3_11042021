@@ -41,16 +41,16 @@
     }
     &__heart {
         position: absolute ;
-        bottom: 35px;
-        right: 25px;
+        bottom: $restaurant-list__card__heart--bottom ;
+        right: $restaurant-list__card__heart--right ;
         &__empty {
-            font-size: 1.5em;
+            font-size: $restaurant-list__card__heart__empty--font-size ;
         }
         &__fullfilled{
             position: absolute;
-            top: -1.5px;
-            left: 0px;
-            font-size: 1.5em;
+            top: $restaurant-list__card__heart__fullfilled--top ;
+            left: $restaurant-list__card__heart__fullfilled--left ;
+            font-size: $restaurant-list__card__heart__fullfilled--font-size ;
             i {
                 color: $colour-primary;
                 opacity: 0;
