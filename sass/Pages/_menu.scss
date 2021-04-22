@@ -1,6 +1,5 @@
 .menu-page {
-    display: flex;
-    align-items: center;
+    @include flex(row, center) ;
     a {
         margin: 0px 0px 0px 15px;
     }
@@ -9,22 +8,157 @@
     }
 }
 
-
 .restaurant-menu {
-    display: flex;
-    flex-direction: column;
-    img {
-        height: $restaurant-list__card__main__image-height;
+    @include flex (column) ;
+    &__image {
+        height: $restaurant-list__card__main__image-height*1.5;
         width: 100%;
-        height: 100%;
         z-index: -999 ;
+        img {
+            @include img-position ;
+        }
     }
     &__list {
         z-index: 999;
-        margin-top: -40px;
-        padding: 35px 20px 35px 20px;
+        margin-top: -50px;
+        padding: $title--padding;
         border-radius: 50px 50px 0px 0px;
-        background-color: $colour-background-primary;
+        background-color: $colour-background-secondary;
+        &__title {
+            @include flex (row, space-between, baseline) ;
+            margin: $title-margin-default;
+            h1 {
+                font-family: $policeTitre;
+                font-size: $title-font-size;
+            }
+            &__heart {
+                position: relative;
+                font-size: 1.2em;
+            }
+            .heart__fullfilled {
+                color: $colour-primary;
+                position: absolute;
+                left: 0;
+                top: 2px;
+                opacity: 0;
+                transition: 200ms ease-in-out;
+            }
+            :hover {
+                opacity: unset;
+            }
+        }
+        &__starter {
+            margin: $title-margin-default;
+            &__title {
+                @include menu__title ;
+                span {
+                @include underlined ;
+                }
+            }
+            &__item {
+               @include item ;
+                a {
+                    @include flex ;
+                    .starter__item__body {
+                        @include item__body ;
+                        &__title {
+                            @include item__title ;
+                        }
+                        &__description {
+                            @include flex (row, space-between) ;
+                            &__details {
+                                @include item__description__details ;
+                            }
+                            .price {
+                                @include item__price ;
+                            }
+                        }
+                    }
+                    .item__checked {
+                        @include checked ;
+                        .fa-check-circle {
+                            @include checked__item ;
+                        }
+                    }
+                }
+                
+            }
+        }
+        &__main-course {
+            margin: $title-margin-default;
+            &__title {
+                @include menu__title ;
+                span {
+                @include underlined ;
+                }
+            }
+            &__item {
+               @include item ;
+                a {
+                    @include flex ;
+                    .main-course__item__body {
+                        @include item__body ;
+                        &__title {
+                            @include item__title ;
+                        }
+                           &__description {
+                            @include flex (row, space-between) ;
+                            &__details {
+                                @include item__description__details ;
+                            }
+                            .price {
+                                @include item__price ;
+                            }
+                        }
+                    }
+                    .item__checked {
+                        @include checked ;
+                        .fa-check-circle {
+                            @include checked__item ;
+                        }
+                    }
+                }
+                
+            }
+        }
+        &__dessert {
+            margin: $title-margin-default;
+            &__title {
+                @include menu__title ;
+                span {
+                @include underlined ;
+                }
+            }
+            &__item {
+               @include item ;
+                a {
+                    @include flex ;
+                    .dessert__item__body {
+                        @include item__body ;
+                        &__title {
+                            @include item__title ;
+                        }
+                           &__description {
+                            @include flex (row, space-between) ;
+                            &__details {
+                                @include item__description__details ;
+                            }
+                            .price {
+                                @include item__price ;
+                            }
+                        }
+                    }
+                    .item__checked {
+                        @include checked ;
+                        .fa-check-circle {
+                            @include checked__item ;
+                        }
+                    }
+                }
+                
+            }
+        }
+
     }
     
 }
