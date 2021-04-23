@@ -52,36 +52,8 @@
             &__title {
                 @include menu__title ;
                 span {
-                @include underlined ;
+                    @include underlined ;
                 }
-            }
-            &__item {
-               @include item ;
-                a {
-                    @include flex ;
-                    .starter__item__body {
-                        @include item__body ;
-                        &__title {
-                            @include item__title ;
-                        }
-                        &__description {
-                            @include flex (row, space-between) ;
-                            &__details {
-                                @include item__description__details ;
-                            }
-                            .price {
-                                @include item__price ;
-                            }
-                        }
-                    }
-                    .item__checked {
-                        @include checked ;
-                        .fa-check-circle {
-                            @include checked__item ;
-                        }
-                    }
-                }
-                
             }
         }
         &__main-course {
@@ -89,36 +61,8 @@
             &__title {
                 @include menu__title ;
                 span {
-                @include underlined ;
+                    @include underlined ;
                 }
-            }
-            &__item {
-               @include item ;
-                a {
-                    @include flex ;
-                    .main-course__item__body {
-                        @include item__body ;
-                        &__title {
-                            @include item__title ;
-                        }
-                           &__description {
-                            @include flex (row, space-between) ;
-                            &__details {
-                                @include item__description__details ;
-                            }
-                            .price {
-                                @include item__price ;
-                            }
-                        }
-                    }
-                    .item__checked {
-                        @include checked ;
-                        .fa-check-circle {
-                            @include checked__item ;
-                        }
-                    }
-                }
-                
             }
         }
         &__dessert {
@@ -126,39 +70,37 @@
             &__title {
                 @include menu__title ;
                 span {
-                @include underlined ;
+                    @include underlined ;
                 }
-            }
-            &__item {
-               @include item ;
-                a {
-                    @include flex ;
-                    .dessert__item__body {
-                        @include item__body ;
-                        &__title {
-                            @include item__title ;
-                        }
-                           &__description {
-                            @include flex (row, space-between) ;
-                            &__details {
-                                @include item__description__details ;
-                            }
-                            .price {
-                                @include item__price ;
-                            }
-                        }
-                    }
-                    .item__checked {
-                        @include checked ;
-                        .fa-check-circle {
-                            @include checked__item ;
-                        }
-                    }
-                }
-                
             }
         }
+        &__button {
+            margin : 50px 0px 50px 0px ;
+            text-align: center ;
+        }
 
+    }    
+}
+
+.item {
+    @include item ;
+    a {
+        @include flex (row, space-between, flex-end) ;
+        .item__description {
+            margin: 10px;
+            width: 75%;
+            h3 {
+                @include item__title ;
+            }
+            p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                @include item__description__details ;
+            }
+        }   
+        .item__price {
+            @include item__price ;
+        }
     }
-    
 }

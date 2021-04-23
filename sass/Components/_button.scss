@@ -1,11 +1,10 @@
-.header-homepage {
-    button {
-        font-weight: $button-font-weight;  
-        border: $button-border;
-        border-radius: $button-border-radius;
-        color: $button-color;
-        background: $button-background ;
-        box-shadow: $button-box-shadow;
-        padding: $button-padding;    
-    }
+
+button {
+    font-weight: $button-font-weight;  
+    border: $button-border;
+    border-radius: $button-border-radius;
+    color: $button-color;
+    background: $button-background ;
+    box-shadow: $button-box-shadow;
+    padding: $button-padding;
 }

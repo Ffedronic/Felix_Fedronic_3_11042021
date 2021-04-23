@@ -22,13 +22,6 @@
     align-items: $align;
 }
 
-@mixin ellipsis {
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 @mixin img-position {
     width: 100%;
     height: 100%;
@@ -52,28 +45,21 @@
 @mixin item {
     background-color: white;
     border-radius: 15px;
-    overflow: hidden;
     margin: 0px 0px 15px 0px;
     box-shadow: $box-shadow-default;
 }
 
-@mixin item__body {
-    padding: 10px;
-    width: 100%;
-}
-
 @mixin item__title {
-    font-size: 1.1em;
+    font-size: 0.9em;
     margin: 0px 0px 10px 0px;
-    @include ellipsis() ;
 }
 
 @mixin item__description__details {
-    font-size: 0.9em;
-    @include ellipsis() ;
+    font-size: 0.8em;
 }
 
 @mixin item__price {
+    margin: 10px;
     font-size: 0.9em;
     font-weight: bold ;
 }
