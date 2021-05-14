@@ -1,0 +1,57 @@
+.item {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0px 0px 15px 0px;
+    box-shadow: $box-shadow-default;
+    a {
+        @include flex (row, space-between) ;
+        .item__body {
+            @include flex (row, space-between, flex-end) ;
+            padding: 10px;
+            width: 100%;
+            margin-right: -75px;
+            transition: all 300ms ease-in-out;
+            .item__description {
+                width: 75%;
+                h3 {
+                    @include ellipsis ;
+                    font-size: 0.9em;
+                    margin: 0px 0px 10px 0px;
+                }
+                p {
+                    @include ellipsis ;
+                    font-size: 0.9em ;
+                }
+            }
+            .item__price {
+                margin-right: 15px;
+                font-size: 0.9em;
+                font-weight: bold;
+            }
+        }
+        .item__checked {
+            background-color: #99e2d0;
+            padding: 25px;
+            transform: translateX(75px);
+            transition: all 300ms ease-in-out;
+            i {
+                color: white;
+                font-size: 1.5em;
+                transition: all 350ms ease-in-out;
+                transition-delay: 150ms;
+            }
+        }
+        &:hover {
+            .item__body {
+                margin-right: 0px;
+            }
+            .item__checked {
+                transform: translateX(0);
+                i {
+                    transform: rotate(360deg);
+                }
+            }
+        }   
+    }
+}

@@ -13,157 +13,162 @@
     <title>Oh my food !!!</title>
 </head>
     <body>
-        <header class="border header-homepage">
-            <div class="border red header-homepage__logo">
-                <img src="/images/logo/ohmyfood@2x.svg" alt="Logo">
+        <div class="container">
+            <div class="load-spinner">
+                <p>Oh My Food</p>
             </div>
-            <section class="border red header-homepage__location">
-                <i class="fas fa-map-marker-alt border green"></i>
-                <h1 class=" header-homepage__location__town border green">Paris, Belleville</h1>
-            </section>
-            <article class="border red header-homepage__presentation">
-                <h2 class="border green header-homepage__presentation__title">Réservez le menu qui vous convient</h2>
-                <p class="border green header-homepage__presentation__details">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <button type="submit" class="border green">Explorer nos restaurants</button>
-            </article>
-            <nav class="nav-menu border red">
-                <h3 class="nav-menu__title border green">Fonctionnement</h3>
-                <div class="nav-menu__list border green">
-                    <article class="nav-menu__list__item border blue">
-                        <p class="nav-menu__list__item__number border orange">1</p>
-                        <div class="nav-menu__list__item__details border orange">
-                            <a href="" class="border magenta">
-                                <i class="fas fa-mobile-alt"></i>
-                                <h4>Choisissez un restaurant</h4>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="nav-menu__list__item border blue">
-                        <p class="nav-menu__list__item__number border orange">2</p>
-                        <div class="nav-menu__list__item__details border orange">
-                            <a href="" class="border magenta">
-                                <i class="fas fa-list-ul"></i>
-                                <h4>Composez votre menu</h4>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="nav-menu__list__item border blue">
-                        <p class="nav-menu__list__item__number border orange">3</p>
-                        <div class="nav-menu__list__item__details border orange">
-                            <a href="" class="border magenta">
-                                <i class="fas fa-store"></i>
-                                <h4>Dégustez au restaurant</h4>
-                            </a>
-                        </div>
-                    </article>
+            <header class="border header-homepage">
+                <div class="border red header-homepage__logo">
+                    <img src="/images/logo/ohmyfood@2x.svg" alt="Logo">
                 </div>
-            </nav>
-        </header>
-        <main class="restaurant-list border">
-            <h3 class="restaurant-list__title border red">Restaurants</h3>
-            <div class="restaurant-list__card-group border red">
-                <div class="restaurant-list__card border green">
-                    <article class="restaurant-list__card__main border blue">
-                        <a href="/html/menu_1.html">
-                            <div class="restaurant-list__card__main__image border orange">
-                                <p class="restaurant-list__card__main__image__button border magenta">Nouveau</p>
-                                <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="border magenta">
+                <section class="border red header-homepage__location">
+                    <i class="fas fa-map-marker-alt border green"></i>
+                    <h1 class=" header-homepage__location__town border green">Paris, Belleville</h1>
+                </section>
+                <article class="border red header-homepage__presentation">
+                    <h2 class="border green header-homepage__presentation__title">Réservez le menu qui vous convient</h2>
+                    <p class="border green header-homepage__presentation__details">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                    <button class="border green">Explorer nos restaurants</button>
+                </article>
+                <nav class="nav-menu border red">
+                    <h3 class="nav-menu__title border green">Fonctionnement</h3>
+                    <div class="nav-menu__list border green">
+                        <article class="nav-menu__list__item border blue">
+                            <p class="nav-menu__list__item__number border orange">1</p>
+                            <div class="nav-menu__list__item__details border orange">
+                                <a href="" class="border magenta">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <h4>Choisissez un restaurant</h4>
+                                </a>
                             </div>
-                            <div class="restaurant-list__card__main__body border orange">
-                                <h4 class="border magenta">La palette du gout</h4>
-                                <p class="border magenta">Ménilmontant</p> 
+                        </article>
+                        <article class="nav-menu__list__item border blue">
+                            <p class="nav-menu__list__item__number border orange">2</p>
+                            <div class="nav-menu__list__item__details border orange">
+                                <a href="" class="border magenta">
+                                    <i class="fas fa-list-ul"></i>
+                                    <h4>Composez votre menu</h4>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="nav-menu__list__item border blue">
+                            <p class="nav-menu__list__item__number border orange">3</p>
+                            <div class="nav-menu__list__item__details border orange">
+                                <a href="" class="border magenta">
+                                    <i class="fas fa-store"></i>
+                                    <h4>Dégustez au restaurant</h4>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </nav>
+            </header>
+            <section class="restaurant-list border">
+                <h3 class="restaurant-list__title border red">Restaurants</h3>
+                <div class="restaurant-list__card-group border red">
+                    <article class="card border green">
+                        <a href="/html/menu_1.html">
+                            <div class="card__image border blue">
+                                <p class="card__image__button border orange">Nouveau</p>
+                                <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                            </div>
+                            <div class="card__body border blue">
+                                <div class="card__body__description border orange">
+                                    <h4 class="border magenta">La palette du gout</h4>
+                                    <p class="border magenta">Ménilmontant</p> 
+                                </div>
+                                <div class="heart border orange">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-heart fullfilled"></i>
+                                </div>
                             </div>
                         </a>
                     </article>
-                    <div class="restaurant-list__card__heart border blue">
-                        <i class="far fa-heart restaurant-list__card__heart__empty border orange"></i>
-                        <a href="" class="restaurant-list__card__heart__fullfilled border orange"><i class="fas fa-heart"></i></a>
-                    </div>
-                </div>
-                <div class="restaurant-list__card border green">
-                    <article class="restaurant-list__card__main border blue">
+                    <article class="card border green">
                         <a href="/html/menu_2.html">
-                            <div class="restaurant-list__card__main__image border orange">
-                                <p class="restaurant-list__card__main__image__button border magenta">Nouveau</p>
+                            <div class="card__image border blue">
+                                <p class="card__image__button border orange">Nouveau</p>
                                 <img src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" class="border magenta">
                             </div>
-                            <div class="restaurant-list__card__main__body border orange">
-                                <h4 class="border magenta">La note enchantée</h4>
-                                <p class="border magenta">Charonne</p>
+                            <div class="card__body border blue">
+                                <div class="card__body__description border orange">
+                                    <h4 class="border magenta">La note enchantée</h4>
+                                    <p class="border magenta">Charonne</p>
+                                </div>
+                                <div class="heart border orange">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-heart fullfilled"></i>
+                                </div>
                             </div>
                         </a>
                     </article>
-                    <div class="restaurant-list__card__heart border blue">
-                        <i class="far fa-heart restaurant-list__card__heart__empty border orange"></i>
-                        <a href="" class="restaurant-list__card__heart__fullfilled border orange"><i class="fas fa-heart"></i></a>
-                    </div>
-                </div>
-                <div class="restaurant-list__card border green">
-                    <article class="restaurant-list__card__main border blue">
+                    <article class="card border green">
                         <a href="/html/menu_3.html">
-                            <div class="restaurant-list__card__main__image border orange">
-                                <p class="restaurant-list__card__main__image__button border magenta">Nouveau</p>
+                            <div class="card__image border blue">
+                                <p class="card__image__button border orange">Nouveau</p>
                                 <img src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" class="border magenta">
                             </div>
-                            <div class="restaurant-list__card__main__body border orange">
-                                <h4 class="border magenta">À la française</h4>
-                                <p class="border mangenta">Cité Rouge</p>
+                            <div class="card__body border blue">
+                                <div class="card__body__description border orange">
+                                    <h4 class="border magenta">À la française</h4>
+                                    <p class="border mangenta">Cité Rouge</p>
+                                </div>
+                                <div class="heart border orange">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-heart fullfilled"></i>
+                                </div>
                             </div>
                         </a>
                     </article>
-                    <div class="restaurant-list__card__heart border blue">
-                        <i class="far fa-heart restaurant-list__card__heart__empty border orange"></i>
-                        <a href="" class="restaurant-list__card__heart__fullfilled border orange"><i class="fas fa-heart"></i></a>
-                    </div>
-                </div>
-                <div class="restaurant-list__card border green">
-                    <article class="restaurant-list__card__main border blue">
+                    <article class="card border green">
                         <a href="/html/menu_4.html">
-                            <div class="restaurant-list__card__main__image border orange">
-                                <p class="restaurant-list__card__main__image__button border magenta">Nouveau</p>
+                            <div class="card__image border blue">
+                                <p class="card__image__button border orange">Nouveau</p>
                                 <img src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" class="border magenta">
                             </div>
-                            <div class="restaurant-list__card__main__body border orange">
-                                <h4 class="border magenta">Le délice des sens</h4>
-                                <p class="border magenta">Folie-Méricourt</p>
+                            <div class="card__body border blue">
+                                <div class="card__body__description border orange">
+                                    <h4 class="border magenta">Le délice des sens</h4>
+                                    <p class="border magenta">Folie-Méricourt</p>
+                                </div>
+                                <div class="heart border orange">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-heart fullfilled"></i>
+                                </div>
                             </div>
                         </a>
                     </article>
-                    <div class="restaurant-list__card__heart border blue">
-                        <i class="far fa-heart restaurant-list__card__heart__empty border orange"></i>
-                        <a href="" class="restaurant-list__card__heart__fullfilled border orange"><i class="fas fa-heart"></i></a>
-                    </div>
                 </div>
-            </div>
-        </main>
-        <footer class="footer border">
-            <p class="footer__title border red">ohmyfood</p>
-            <nav>
-                <ul class="footer__menu border red">
-                    <li class="footer__menu__item border green">
-                        <a href="">
-                            <i class="fas fa-utensils footer__menu__item__icon border blue"></i>
-                            <p class="footer__menu__item__description border blue">Proposer un restaurant</p>  
-                        </a>
-                    </li>
-                    <li class="footer__menu__item border green">
-                        <a href="">
-                            <i class="fas fa-hands-helping footer__menu__item__icon border blue"></i>
-                            <p class="footer__menu__item__description border blue">Devenir partenaire</p> 
-                        </a>
-                    </li>
-                    <li class="footer__menu__item border green">
-                        <a href="">
-                            <p class="footer__menu__item__description border blue">Mentions légales</p>
-                        </a>
-                    </li>
-                    <li class="footer__menu__item border green">
-                        <a href="mailto:felix.fedronic@gmail.com">
-                            <p class="footer__menu__item__description border blue">Contact</p>
-                        </a>
-                    </li>
-                </ul>
-            </nav> 
-        </footer>
+            </section>
+            <footer class="footer border">
+                <p class="footer__title border red">ohmyfood</p>
+                <nav>
+                    <ul class="footer__menu border red">
+                        <li class="footer__menu__item border green">
+                            <a href="">
+                                <i class="fas fa-utensils footer__menu__item__icon border blue"></i>
+                                <p class="footer__menu__item__description border blue">Proposer un restaurant</p>  
+                            </a>
+                        </li>
+                        <li class="footer__menu__item border green">
+                            <a href="">
+                                <i class="fas fa-hands-helping footer__menu__item__icon border blue"></i>
+                                <p class="footer__menu__item__description border blue">Devenir partenaire</p> 
+                            </a>
+                        </li>
+                        <li class="footer__menu__item border green">
+                            <a href="">
+                                <p class="footer__menu__item__description border blue">Mentions légales</p>
+                            </a>
+                        </li>
+                        <li class="footer__menu__item border green">
+                            <a href="mailto:felix.fedronic@gmail.com">
+                                <p class="footer__menu__item__description border blue">Contact</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav> 
+            </footer>
+        </div>
     </body>
 </html>

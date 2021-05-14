@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+.load-spinner {
+    width: 99%;
+    position: absolute;
+    top: 15%;
+    background: transparent;
+    z-index: -999;
+    text-align: center;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.load-spinner__element {
+    font-family: "Shrikhand", "cursive";
+    font-size: 5em;
+    color: #9356DC;
+    animation: element 1000ms ease-in-out both 3;
+    animation-direction: alternate;
+    opacity: 0;
+}
+
+@keyframes element {
+    0% {
+        opacity: 1;
+        transform: translateX(2%);
+    }
+    100% {
+        transform: translate(-2%);
+    }
+}
+
+.load-spinner__element--1 {
+    animation-delay: 300ms;
+}
+.load-spinner__element--2 {
+    animation-delay: 600ms;
+}
+.load-spinner__element--3 {
+    animation-delay: 900ms;
+}

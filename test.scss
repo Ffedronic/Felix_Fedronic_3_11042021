@@ -1,0 +1,46 @@
+$anim-duration : 1000ms ;
+$anim-delay : $anim-duration / 3 ;
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #9356DC;
+    z-index: 999;
+}
+
+.load-spinner {
+    animation: zindex 5000ms ease-in-out both;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__element {
+        font-family: "Shrikhand", "cursive";
+        font-size: 5em;
+        color: #9356DC;
+        animation: element 1000ms ease-in-out both 3 alternate;
+        opacity: 0;
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                animation-delay: $anim-delay*$i ;
+            }
+        }
+    }
+}
+
+@keyframes element {
+    0% {
+        opacity: 1;
+        transform: translateX(2%);
+    }
+    100% {
+        z-index: 1;
+        transform: translate(-2%);
+        display: none;
+    }
+}
+

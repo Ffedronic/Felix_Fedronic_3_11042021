@@ -1,0 +1,25 @@
+$anim-duration : 1000ms ;
+$anim-delay : $anim-duration / 10 ;
+
+.item {
+    transform-origin: top center;
+    animation: item $anim-duration ease-in-out both;
+    @for $i from 1 through 10 {
+        &--#{$i} {
+            animation-delay: 125ms * $i;
+        }
+        
+    }
+}
+
+
+@keyframes item {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}

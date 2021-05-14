@@ -28,48 +28,75 @@
     object-fit: cover;   
 }
 
+@mixin button {
+    font-weight: bold;
+    border: none;
+    border-radius: $border-radius-default;
+    color: white;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    box-shadow: $box-shadow-default;
+    padding: 15px 50px 15px 50px;
+    transition: all 200ms ease-in-out;
+}
+
+@mixin heart__position {
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2em;
+}
+
+@mixin heart__fullfilled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color:#9356DC;
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+    z-index: 999;
+}
+
+@mixin card {
+    margin: 0px 0px 25px 0px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+@mixin card__image {
+    position: relative;
+    height: 190px;
+}
+
+@mixin card__button {
+    position: absolute;
+    font-weight: bold;
+    top: 15px;
+    right: 15px;
+    color: 5px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    background-color: #89ffd7;
+}
 /***mixins pages of the menu***/
 
 @mixin menu__title {
     font-size: 1.2em;
     text-transform: uppercase;
     padding: 0px 0px 2px 0px;
-    margin: 0px 0px 15px 0px;
+    margin: $title-margin-default;
+}
+
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @mixin underlined {
     border-bottom: 3px #99e2d0 solid;
     padding: 0px 0px 2px 0px;
-}
-
-@mixin item {
-    background-color: white;
-    border-radius: 15px;
-    margin: 0px 0px 15px 0px;
-    box-shadow: $box-shadow-default;
-}
-
-@mixin item__title {
-    font-size: 0.9em;
-    margin: 0px 0px 10px 0px;
-}
-
-@mixin item__description__details {
-    font-size: 0.8em;
-}
-
-@mixin item__price {
-    margin: 10px;
-    font-size: 0.9em;
-    font-weight: bold ;
-}
-
-@mixin checked {
-    background-color: #99e2d0 ;
-    padding: 20px;
-}
-
-@mixin checked__item {
-    color: white;
-    font-size: 1.5em;
 }

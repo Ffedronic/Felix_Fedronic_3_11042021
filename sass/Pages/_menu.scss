@@ -19,6 +19,7 @@
         }
     }
     &__list {
+        @include flex (column) ;
         z-index: 999;
         margin-top: -50px;
         padding: $title--padding;
@@ -31,20 +32,16 @@
                 font-family: $policeTitre;
                 font-size: $title-font-size;
             }
-            &__heart {
+            .heart {
                 position: relative;
+                overflow: hidden;
                 font-size: 1.2em;
-            }
-            .heart__fullfilled {
-                color: $colour-primary;
-                position: absolute;
-                left: 0;
-                top: 2px;
-                opacity: 0;
-                transition: 200ms ease-in-out;
-            }
-            :hover {
-                opacity: unset;
+                .fullfilled {
+                    @include heart__fullfilled ;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
             }
         }
         &__starter {
@@ -80,27 +77,4 @@
         }
 
     }    
-}
-
-.item {
-    @include item ;
-    a {
-        @include flex (row, space-between, flex-end) ;
-        .item__description {
-            margin: 10px;
-            width: 75%;
-            h3 {
-                @include item__title ;
-            }
-            p {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                @include item__description__details ;
-            }
-        }   
-        .item__price {
-            @include item__price ;
-        }
-    }
 }

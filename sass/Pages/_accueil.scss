@@ -1,9 +1,10 @@
+
 .header-homepage__location {
     display: flex;
     align-items :center;
     justify-content: center;
     padding: 10px 0px 10px 0px;
-    background-color : $header__location-background-color ;
+    background : $header__location-background-color ;
     i {
         font-size: $header__location-icon-font-size ;
         margin: $header__location-icon-margin ;
@@ -14,9 +15,10 @@
 }
 
 .header-homepage__presentation {
+    z-index: -999;
     padding: $header__presentation-padding;
     text-align: $header__presentation-text-align;
-    background-color: $header__presentation-background-color;
+    background : $header__presentation-background-color;
     &__title {
         font-size: $header__presentation__title-font-size;
         margin: $header__presentation__title-margin;

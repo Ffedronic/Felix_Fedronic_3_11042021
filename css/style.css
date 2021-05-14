@@ -4,7 +4,6 @@
 /***border-radius***/
 /***title padding***/
 /***title font size***/
-/***button***/
 /***header css value***/
 /**logo**/
 /**location**/
@@ -64,25 +63,27 @@ button {
   border-radius: 20px;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   padding: 15px 50px 15px 50px;
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  background: linear-gradient(#ff98e2, #a36fe1);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
 }
 
-.restaurant-list__card {
-  position: relative;
+.card {
   margin: 0px 0px 25px 0px;
-}
-.restaurant-list__card__main {
   overflow: hidden;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
-.restaurant-list__card__main__image {
+.card__image {
   position: relative;
   height: 190px;
 }
-.restaurant-list__card__main__image__button {
+.card__image__button {
   position: absolute;
   font-weight: bold;
   top: 15px;
@@ -93,45 +94,176 @@ button {
   font-size: 0.9em;
   background-color: #89ffd7;
 }
-.restaurant-list__card__main__image img {
-  object-fit: cover;
-  box-sizing: border-box;
+.card__image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   object-position: 50% 60%;
 }
-.restaurant-list__card__main__body {
+.card__body {
   padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
 }
-.restaurant-list__card__main__body h4 {
+.card__body__description h4 {
   font-size: 1em;
   margin: 0px 0px 5px 0px;
 }
-.restaurant-list__card__main__body p {
+.card__body__description p {
   font-size: 1em;
 }
-.restaurant-list__card__heart {
+.card__body .heart {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.2em;
+}
+.card__body .heart .fullfilled {
   position: absolute;
-  bottom: 35px;
-  right: 25px;
-}
-.restaurant-list__card__heart__empty {
-  font-size: 1.5em;
-}
-.restaurant-list__card__heart__fullfilled {
-  position: absolute;
-  top: -1.5px;
-  left: 0px;
-  font-size: 1.5em;
-}
-.restaurant-list__card__heart__fullfilled i {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   color: #9356DC;
+  transition: all 200ms ease-in-out;
   opacity: 0;
+  z-index: 999;
 }
-.restaurant-list__card__heart__fullfilled :hover {
-  opacity: unset;
+.card__body .heart .fullfilled:hover {
+  opacity: 1;
 }
 
+.item {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0px 0px 15px 0px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: initial;
+}
+.item a .item__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  width: 100%;
+  margin-right: -75px;
+  transition: all 300ms ease-in-out;
+}
+.item a .item__body .item__description {
+  width: 75%;
+}
+.item a .item__body .item__description h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9em;
+  margin: 0px 0px 10px 0px;
+}
+.item a .item__body .item__description p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9em;
+}
+.item a .item__body .item__price {
+  margin-right: 15px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.item a .item__checked {
+  background-color: #99e2d0;
+  padding: 25px;
+  transform: translateX(75px);
+  transition: all 300ms ease-in-out;
+}
+.item a .item__checked i {
+  color: white;
+  font-size: 1.5em;
+  transition: all 350ms ease-in-out;
+  transition-delay: 150ms;
+}
+.item a:hover .item__body {
+  margin-right: 0px;
+}
+.item a:hover .item__checked {
+  transform: translateX(0);
+}
+.item a:hover .item__checked i {
+  transform: rotate(360deg);
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.container .load-spinner {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation: z_index 3000ms ease-in-out both;
+}
+.container .load-spinner::after {
+  position: absolute;
+  content: "";
+  background: black;
+  width: 100%;
+  height: 100%;
+  animation: background-div 3000ms forwards;
+}
+.container .load-spinner p {
+  padding-top: 4em;
+  margin: 0 auto;
+  font-family: "Shrikhand", "cursive";
+  font-size: 3em;
+  color: #9356DC;
+  animation: element 3000ms ease-in-out forwards;
+}
+
+@keyframes background-div {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes z_index {
+  0% {
+    z-index: 999;
+    visibility: visible;
+  }
+  99.9% {
+    z-index: 999;
+  }
+  100% {
+    z-index: -999;
+  }
+}
+@keyframes element {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(0);
+    opacity: 0;
+  }
+}
 .header-homepage__logo {
   text-align: center;
   padding: 25px 0px 10px 0px;
@@ -202,7 +334,7 @@ button {
   padding: 25px 25px 25px 35px;
   border-radius: 20px;
   margin: 0px 0px 35px -15px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 .nav-menu__list__item__details a i {
   color: grey;
@@ -225,7 +357,7 @@ button {
   align-items: center;
   justify-content: center;
   padding: 10px 0px 10px 0px;
-  background-color: #E5E5E5;
+  background: #E5E5E5;
 }
 .header-homepage__location i {
   font-size: 1em;
@@ -236,9 +368,10 @@ button {
 }
 
 .header-homepage__presentation {
+  z-index: -999;
   padding: 35px 25px 35px 25px;
   text-align: center;
-  background-color: #f6f6f6;
+  background: #f6f6f6;
 }
 .header-homepage__presentation__title {
   font-size: 1.5em;
@@ -289,6 +422,10 @@ button {
   object-fit: cover;
 }
 .restaurant-menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
   z-index: 999;
   margin-top: -50px;
   padding: 35px 20px 35px 20px;
@@ -306,20 +443,24 @@ button {
   font-family: "Shrikhand";
   font-size: 1.5em;
 }
-.restaurant-menu__list__title__heart {
+.restaurant-menu__list__title .heart {
   position: relative;
+  overflow: hidden;
   font-size: 1.2em;
 }
-.restaurant-menu__list__title .heart__fullfilled {
-  color: #9356DC;
+.restaurant-menu__list__title .heart .fullfilled {
   position: absolute;
+  top: 0;
   left: 0;
-  top: 2px;
+  right: 0;
+  bottom: 0;
+  color: #9356DC;
+  transition: all 200ms ease-in-out;
   opacity: 0;
-  transition: 200ms ease-in-out;
+  z-index: 999;
 }
-.restaurant-menu__list__title :hover {
-  opacity: unset;
+.restaurant-menu__list__title .heart .fullfilled:hover {
+  opacity: 1;
 }
 .restaurant-menu__list__starter {
   margin: 0px 0px 25px 0px;
@@ -328,7 +469,7 @@ button {
   font-size: 1.2em;
   text-transform: uppercase;
   padding: 0px 0px 2px 0px;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 25px 0px;
 }
 .restaurant-menu__list__starter__title span {
   border-bottom: 3px #99e2d0 solid;
@@ -341,7 +482,7 @@ button {
   font-size: 1.2em;
   text-transform: uppercase;
   padding: 0px 0px 2px 0px;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 25px 0px;
 }
 .restaurant-menu__list__main-course__title span {
   border-bottom: 3px #99e2d0 solid;
@@ -354,7 +495,7 @@ button {
   font-size: 1.2em;
   text-transform: uppercase;
   padding: 0px 0px 2px 0px;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 25px 0px;
 }
 .restaurant-menu__list__dessert__title span {
   border-bottom: 3px #99e2d0 solid;
@@ -366,35 +507,49 @@ button {
 }
 
 .item {
-  background-color: white;
-  border-radius: 15px;
-  margin: 0px 0px 15px 0px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  transform-origin: top center;
+  animation: item 1000ms ease-in-out both;
 }
-.item a {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+.item--1 {
+  animation-delay: 125ms;
 }
-.item a .item__description {
-  margin: 10px;
-  width: 75%;
+.item--2 {
+  animation-delay: 250ms;
 }
-.item a .item__description h3 {
-  font-size: 0.9em;
-  margin: 0px 0px 10px 0px;
+.item--3 {
+  animation-delay: 375ms;
 }
-.item a .item__description p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 0.8em;
+.item--4 {
+  animation-delay: 500ms;
 }
-.item a .item__price {
-  margin: 10px;
-  font-size: 0.9em;
-  font-weight: bold;
+.item--5 {
+  animation-delay: 625ms;
+}
+.item--6 {
+  animation-delay: 750ms;
+}
+.item--7 {
+  animation-delay: 875ms;
+}
+.item--8 {
+  animation-delay: 1000ms;
+}
+.item--9 {
+  animation-delay: 1125ms;
+}
+.item--10 {
+  animation-delay: 1250ms;
+}
+
+@keyframes item {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,62 +1,34 @@
-.restaurant-list__card {
-    position: relative;
-    margin: $restaurant-list__card-margin;
-    &__main {
-        overflow: hidden;
-        background-color: $restaurant-list__card__main-background-color;
-        border-radius: $restaurant-list__card__main-border-radius;
-        box-shadow: $restaurant-list__card__main-box-shadow;
-        &__image {
-            position: relative;
-            height: $restaurant-list__card__main__image-height;
-            &__button {
-                position: absolute;
-                font-weight: bold;
-                top: $restaurant-list__card__main__image__button-top ;
-                right: $restaurant-list__card__main__image__button-right ;
-                color :$restaurant-list__card__main__image__button-color ;
-                padding: $restaurant-list__card__main__image__button-padding ;
-                border-radius: $restaurant-list__card__main__image__button-color ;
-                font-size: $restaurant-list__card__main__image__button-font-size ;
-                background-color : $restaurant-list__card__main__image__button-background-color ;
-            }
-            img {
-                object-fit: cover;
-                box-sizing: border-box;
-                width: $restaurant-list__card__main__image__img-width ;
-                height: $restaurant-list__card__main__image__img-height ;
-                object-position: $restaurant-list__card__main__image__img-object-position ;               
-            }
+.card {
+    @include card ;
+    &__image {
+        @include card__image ;
+        &__button {
+            @include card__button ;
         }
-        &__body {
-            padding: $restaurant-list__card__main__body-padding ;
+        img {
+            @include img-position ;
+            object-position: 50% 60%;
+        }
+    }
+    &__body {
+        padding: 15px;
+        @include flex (row, space-between, baseline) ;
+        &__description {
             h4 {
-                font-size: $restaurant-list__card__main__body__title--font-size ;
-                margin: $restaurant-list__card__main__body__title--margin ;
+                font-size: 1em;
+                margin: 0px 0px 5px 0px;
             }
             p {
-                font-size: $restaurant-list__card__main__body__description--font-size ;
+                font-size: 1em;
             }
-        }      
-    }
-    &__heart {
-        position: absolute ;
-        bottom: $restaurant-list__card__heart--bottom ;
-        right: $restaurant-list__card__heart--right ;
-        &__empty {
-            font-size: $restaurant-list__card__heart__empty--font-size ;
         }
-        &__fullfilled{
-            position: absolute;
-            top: $restaurant-list__card__heart__fullfilled--top ;
-            left: $restaurant-list__card__heart__fullfilled--left ;
-            font-size: $restaurant-list__card__heart__fullfilled--font-size ;
-            i {
-                color: $colour-primary;
-                opacity: 0;
-            }
-            :hover {
-                opacity: unset;
+        .heart {
+            @include heart__position ;
+            .fullfilled {
+                @include heart__fullfilled ;
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
     }
