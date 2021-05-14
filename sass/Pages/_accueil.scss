@@ -1,40 +1,47 @@
-
 .header-homepage__location {
     display: flex;
     align-items :center;
     justify-content: center;
     padding: 10px 0px 10px 0px;
-    background : $header__location-background-color ;
+    background : $colour-background-primary ;
     i {
-        font-size: $header__location-icon-font-size ;
-        margin: $header__location-icon-margin ;
+        font-size: 1em ;
+        margin: 0px 15px 0px 0px ;
     }
     &__town {
-        font-size: $header__location__town-font-size;
+        font-size: 1em;
     }
 }
 
+
 .header-homepage__presentation {
-    z-index: -999;
-    padding: $header__presentation-padding;
-    text-align: $header__presentation-text-align;
-    background : $header__presentation-background-color;
+    padding: 35px 25px 35px 25px;
+    text-align: center;
+    background : $colour-background-secondary;
     &__title {
-        font-size: $header__presentation__title-font-size;
-        margin: $header__presentation__title-margin;
-        padding: $header__presentation__title-padding ;
+        font-size: $title-font-size;
+        margin: $title-margin-default;
+        padding: 0px 30px 0px 30px ;
     }
     &__details {
-        margin: $header__presentation__details-margin;
-        font-size: $header__presentation__details-font-size;
+        margin: 0px 0px 25px 0px;
+        font-size: 1em;
     }
 }
 
 .restaurant-list {
-    background-color: $restaurant-list-background-color ;
-    padding : $restaurant-list-padding ;
+    background-color: $colour-background-secondary ;
+    padding : 35px 20px 35px 20px ;
     &__title {
-        font-size: $restaurant-list__title-font-size;
-        margin: $restaurant-list__title-margin;
+        font-size: $title-font-size;
+        margin: $title-margin-default;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    @media all and (min-width : 992px) {
+        flex-direction: row-reverse;
     }
 }

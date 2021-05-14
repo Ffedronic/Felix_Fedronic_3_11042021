@@ -368,7 +368,6 @@ button:hover {
 }
 
 .header-homepage__presentation {
-  z-index: -999;
   padding: 35px 25px 35px 25px;
   text-align: center;
   background: #f6f6f6;
@@ -390,6 +389,16 @@ button:hover {
 .restaurant-list__title {
   font-size: 1.5em;
   margin: 0px 0px 25px 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+@media all and (min-width: 992px) {
+  main {
+    flex-direction: row-reverse;
+  }
 }
 
 .menu-page {
