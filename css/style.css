@@ -79,6 +79,13 @@ button:hover {
   border-radius: 20px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
+@media all and (min-width: 992px) {
+  .card {
+    width: 250px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+}
 .card__image {
   position: relative;
   height: 190px;
@@ -172,6 +179,13 @@ button:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 0.9em;
+}
+@media all and (min-width: 992px) {
+  .item a .item__body .item__description p {
+    white-space: initial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .item a .item__body .item__price {
   margin-right: 15px;
@@ -304,6 +318,14 @@ button:hover {
 .nav-menu {
   padding: 35px 20px 35px 20px;
 }
+@media all and (min-width: 992px) {
+  .nav-menu {
+    background-color: white;
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
 .nav-menu__title {
   font-size: 1.5em;
   margin: 0px 0px 25px 0px;
@@ -311,9 +333,13 @@ button:hover {
 .nav-menu__list {
   display: flex;
   flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
 }
 .nav-menu__list__item {
   display: flex;
+  flex-direction: row;
+  justify-content: initial;
   align-items: baseline;
 }
 .nav-menu__list__item__number {
@@ -330,6 +356,8 @@ button:hover {
 }
 .nav-menu__list__item__details a {
   display: flex;
+  flex-direction: row;
+  justify-content: initial;
   align-items: center;
   padding: 25px 25px 25px 35px;
   border-radius: 20px;
@@ -359,6 +387,13 @@ button:hover {
   padding: 10px 0px 10px 0px;
   background: #E5E5E5;
 }
+@media all and (min-width: 992px) {
+  .header-homepage__location {
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
 .header-homepage__location i {
   font-size: 1em;
   margin: 0px 15px 0px 0px;
@@ -371,6 +406,13 @@ button:hover {
   padding: 35px 25px 35px 25px;
   text-align: center;
   background: #f6f6f6;
+}
+@media all and (min-width: 992px) {
+  .header-homepage__presentation {
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  }
 }
 .header-homepage__presentation__title {
   font-size: 1.5em;
@@ -386,18 +428,48 @@ button:hover {
   background-color: #f6f6f6;
   padding: 35px 20px 35px 20px;
 }
+@media all and (min-width: 992px) {
+  .restaurant-list {
+    background-color: white;
+    margin-right: 15px;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+}
 .restaurant-list__title {
   font-size: 1.5em;
   margin: 0px 0px 25px 0px;
+}
+.restaurant-list__card-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+}
+@media all and (min-width: 992px) {
+  .restaurant-list__card-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 main {
   display: flex;
   flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
 }
 @media all and (min-width: 992px) {
   main {
+    margin: 15px;
+    display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
@@ -471,8 +543,22 @@ main {
 .restaurant-menu__list__title .heart .fullfilled:hover {
   opacity: 1;
 }
+@media all and (min-width: 992px) {
+  .restaurant-menu__list__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
 .restaurant-menu__list__starter {
   margin: 0px 0px 25px 0px;
+}
+@media all and (min-width: 992px) {
+  .restaurant-menu__list__starter {
+    width: 30%;
+  }
 }
 .restaurant-menu__list__starter__title {
   font-size: 1.2em;
@@ -487,6 +573,11 @@ main {
 .restaurant-menu__list__main-course {
   margin: 0px 0px 25px 0px;
 }
+@media all and (min-width: 992px) {
+  .restaurant-menu__list__main-course {
+    width: 30%;
+  }
+}
 .restaurant-menu__list__main-course__title {
   font-size: 1.2em;
   text-transform: uppercase;
@@ -499,6 +590,11 @@ main {
 }
 .restaurant-menu__list__dessert {
   margin: 0px 0px 25px 0px;
+}
+@media all and (min-width: 992px) {
+  .restaurant-menu__list__dessert {
+    width: 30%;
+  }
 }
 .restaurant-menu__list__dessert__title {
   font-size: 1.2em;

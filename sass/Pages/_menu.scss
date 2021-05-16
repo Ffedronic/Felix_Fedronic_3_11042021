@@ -44,8 +44,17 @@
                 }
             }
         }
+        &__items {
+            @include desktop-only {
+                @include flex (row, space-between, flex-start) ;
+                flex-wrap: wrap;
+            }
+        }
         &__starter {
             margin: $title-margin-default;
+            @include desktop-only {
+                width: 30% ;
+            }
             &__title {
                 @include menu__title ;
                 span {
@@ -55,6 +64,9 @@
         }
         &__main-course {
             margin: $title-margin-default;
+            @include desktop-only {
+                width: 30% ;
+            }
             &__title {
                 @include menu__title ;
                 span {
@@ -64,6 +76,9 @@
         }
         &__dessert {
             margin: $title-margin-default;
+            @include desktop-only {
+                width: 30% ;
+            }
             &__title {
                 @include menu__title ;
                 span {

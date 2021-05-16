@@ -1,44 +1,52 @@
+
+
 .nav-menu {
-    padding: $nav-menu-padding;
+    padding: 35px 20px 35px 20px ;
+    @include desktop-only {
+        background-color: white;
+        width: 30%;
+        border-radius: 15px;
+        box-shadow: $box-shadow-default;
+    }
     &__title {
-        font-size: $nav-menu__title-font-size;
-        margin: $nav-menu__title-margin;
+        font-size: $title-font-size;
+        margin: $title-margin-default;
     }
     &__list{
-        @include flex-direction-column ;
+        @include flex(column) ;
         &__item {
-            @include flex-align-items-baseline ;
+            @include flex(row, initial, baseline) ;
             &__number {
-                font-size: $nav-menu__list__item__number-font-size ;
-                color: $nav-menu__list__item__number-color ;
-                background-color: $nav-menu__list__item__number-background-color;
-                padding: $nav-menu__list__item__number-padding ;
-                border-radius: $nav-menu__list__item__number-border-radius;
-                z-index: $nav-menu__list__item__number-z-index;
+                font-size: 1em ;
+                color: white ;
+                background-color: $colour-primary;
+                padding: 5px 10px 5px 10px ;
+                border-radius: 50%;
+                z-index: 2;
             }
             &__details {
-                z-index: $nav-menu__list__item__details-z-index;
-                width: $nav-menu__list__item__details-width ;
+                z-index: 1;
+                width: 100% ;
                 a {
-                    @include flex-align-items-center ;
-                    padding: $nav-menu__list__item__details_a-padding;
-                    border-radius: $nav-menu__list__item__details_a-border-radius;
-                    margin : $nav-menu__list__item__details_a-margin;            
-                    box-shadow: $nav-menu__list__item__details_a-box-shadow;
+                    @include flex (row, initial, center) ;
+                    padding: 25px 25px 25px 35px;
+                    border-radius: $border-radius-default;
+                    margin : 0px 0px 35px -15px;            
+                    box-shadow: $box-shadow-default;
                     i {
-                        color : $nav-menu__list__item__details_a_icon-color ;
-                        margin: $nav-menu__list__item__details_a_icon-margin;
-                        font-size: $nav-menu__list__item__details_a_icon-font-size;
+                        color : $colour-quaternary ;
+                        margin: 0px 25px 0px 0px;
+                        font-size: 1.3em;
                     }
                     h4 {
-                        font-size: $nav-menu__list__item__details_a_title-font-size;
-                        font-weight: $nav-menu__list__item__details_a_title-font-weight ;
+                        font-size: 1em;
+                        font-weight: bold ;
                     }
                 }
                 :hover {
-                    background-color: $nav-menu__list__item__details_a_hover-background-color;
+                    background-color: lighten($colour-primary, 30%);
                     i {
-                        color: $nav-menu__list__item__details_a_hover_icon-color ;
+                        color: $colour-primary ;
                     }
                 }
             }

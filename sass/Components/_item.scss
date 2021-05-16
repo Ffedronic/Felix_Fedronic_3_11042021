@@ -15,13 +15,16 @@
             .item__description {
                 width: 75%;
                 h3 {
-                    @include ellipsis ;
+                    @include ellipsis(nowrap) ;
                     font-size: 0.9em;
                     margin: 0px 0px 10px 0px;
                 }
                 p {
-                    @include ellipsis ;
+                    @include ellipsis(nowrap) ;
                     font-size: 0.9em ;
+                    @include desktop-only {
+                        @include ellipsis(initial) ;
+                    }
                 }
             }
             .item__price {
