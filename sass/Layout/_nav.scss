@@ -1,12 +1,14 @@
-
-
 .nav-menu {
     padding: 35px 20px 35px 20px ;
-    @include desktop-only {
+    @include responsive {
         background-color: white;
-        width: 30%;
+        margin: 15px;
         border-radius: 15px;
         box-shadow: $box-shadow-default;
+    }
+    @include desktop-only {
+        width: 30%;
+        margin: unset;
     }
     &__title {
         font-size: $title-font-size;

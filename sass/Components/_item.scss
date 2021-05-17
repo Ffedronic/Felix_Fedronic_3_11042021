@@ -22,7 +22,7 @@
                 p {
                     @include ellipsis(nowrap) ;
                     font-size: 0.9em ;
-                    @include desktop-only {
+                    @include responsive {
                         @include ellipsis(initial) ;
                     }
                 }

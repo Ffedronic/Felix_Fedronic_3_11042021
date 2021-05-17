@@ -8,6 +8,9 @@
         margin: $footer__title--margin ;
     }
     &__menu {
+        @include responsive {
+            @include flex (row, space-between, flex-start) ;
+        }
         &__item {
             margin: $footer__menu__item--margin ;
             a {

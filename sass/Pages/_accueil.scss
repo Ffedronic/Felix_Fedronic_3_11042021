@@ -4,7 +4,7 @@
     justify-content: center;
     padding: 10px 0px 10px 0px;
     background : $colour-background-primary ;
-    @include desktop-only {
+    @include responsive {
         margin: 15px;
         border-radius: 15px ;
         box-shadow: $box-shadow-default ;
@@ -23,7 +23,7 @@
     padding: 35px 25px 35px 25px;
     text-align: center;
     background : $colour-background-secondary;
-    @include desktop-only {
+    @include responsive {
         margin: 15px;
         border-radius: 15px ;
         box-shadow: $box-shadow-default ;
@@ -42,12 +42,15 @@
 .restaurant-list {
     background-color: $colour-background-secondary ;
     padding : 35px 20px 35px 20px ;
-    @include desktop-only {
+    @include responsive {
         background-color: white;
-        margin-right: 15px;
-        width: 60% ;
+        margin : 15px ;
         border-radius: 15px ;
         box-shadow: $box-shadow-default ;
+    }
+    @include desktop-only {
+        width: 60%;
+        margin: unset;
     }
     &__title {
         font-size: $title-font-size;
@@ -55,7 +58,7 @@
     }
     &__card-group {
         @include flex (column) ;
-        @include desktop-only {
+        @include responsive {
             @include flex (row, space-evenly, center) ;
             flex-wrap: wrap ;
         } 
