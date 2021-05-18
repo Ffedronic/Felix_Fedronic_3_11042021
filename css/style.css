@@ -82,7 +82,7 @@ button:hover {
   margin: 0px 0px 25px 0px;
   overflow: hidden;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   transition: all 250ms ease-in-out;
 }
@@ -140,14 +140,14 @@ button:hover {
 }
 .card__body .heart .fullfilled {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   right: 0;
   bottom: 0;
   color: #9356DC;
   transition: all 200ms ease-in-out;
   opacity: 0;
-  z-index: 999;
+  z-index: 998;
 }
 .card__body .heart .fullfilled:hover {
   opacity: 1;
@@ -265,7 +265,7 @@ button:hover {
 
 @keyframes background-div {
   0% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
   100% {
     opacity: 0;
@@ -287,19 +287,17 @@ button:hover {
   0% {
     opacity: 1;
   }
-  25% {
-    transform: scale(1.2);
+  50% {
+    transform: scale(1.5);
   }
-  40% {
-    transform: scale(0.9);
+  75% {
+    transform: scale(1);
   }
-  55% {
-    transform: scale(1.2);
-  }
-  70% {
-    transform: scale(0.9);
+  95% {
+    transform: scale(3);
   }
   100% {
+    transform: scale(0);
     opacity: 0;
   }
 }
@@ -581,14 +579,14 @@ main {
 }
 .restaurant-menu__list__title .heart .fullfilled {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   right: 0;
   bottom: 0;
   color: #9356DC;
   transition: all 200ms ease-in-out;
   opacity: 0;
-  z-index: 999;
+  z-index: 998;
 }
 .restaurant-menu__list__title .heart .fullfilled:hover {
   opacity: 1;
@@ -662,48 +660,50 @@ main {
 }
 
 .item {
-  transform-origin: top center;
-  animation: item 1000ms ease-in-out both;
+  animation: item 300ms ease-in-out both;
 }
 .item--1 {
-  animation-delay: 125ms;
+  animation-delay: 150ms;
 }
 .item--2 {
-  animation-delay: 250ms;
+  animation-delay: 300ms;
 }
 .item--3 {
-  animation-delay: 375ms;
+  animation-delay: 450ms;
 }
 .item--4 {
-  animation-delay: 500ms;
+  animation-delay: 600ms;
 }
 .item--5 {
-  animation-delay: 625ms;
-}
-.item--6 {
   animation-delay: 750ms;
 }
+.item--6 {
+  animation-delay: 900ms;
+}
 .item--7 {
-  animation-delay: 875ms;
+  animation-delay: 1050ms;
 }
 .item--8 {
-  animation-delay: 1000ms;
+  animation-delay: 1200ms;
 }
 .item--9 {
-  animation-delay: 1125ms;
+  animation-delay: 1350ms;
 }
 .item--10 {
-  animation-delay: 1250ms;
+  animation-delay: 1500ms;
 }
 
 @keyframes item {
   0% {
+    transform: translateY(15px);
     opacity: 0;
-    transform: scaleY(0);
+  }
+  80% {
+    opacity: 0.5;
   }
   100% {
+    transform: translateY(0px);
     opacity: 1;
-    transform: scaleY(1);
   }
 }
 

@@ -1,12 +1,11 @@
-$anim-duration : 1000ms ;
+$anim-duration : 300ms ;
 $anim-delay : $anim-duration / 10 ;
 
 .item {
-    transform-origin: top center;
     animation: item $anim-duration ease-in-out both;
     @for $i from 1 through 10 {
         &--#{$i} {
-            animation-delay: 125ms * $i;
+            animation-delay: 150ms * $i;
         }
         
     }
@@ -14,11 +13,14 @@ $anim-delay : $anim-duration / 10 ;
 
 @keyframes item {
     0% {
+        transform: translateY(15px);
         opacity: 0;
-        transform: scaleY(0);
+    }
+    80% {
+        opacity: 0.5;
     }
     100% {
+        transform: translateY(0px);
         opacity: 1;
-        transform: scaleY(1);
     }
 }

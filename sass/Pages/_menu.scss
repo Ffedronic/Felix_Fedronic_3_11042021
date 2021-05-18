@@ -33,9 +33,7 @@
                 font-size: $title-font-size;
             }
             .heart {
-                position: relative;
-                overflow: hidden;
-                font-size: 1.2em;
+                @include heart__position ;
                 .fullfilled {
                     @include heart__fullfilled ;
                     &:hover {
