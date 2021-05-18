@@ -260,7 +260,7 @@ button:hover {
   font-size: 4em;
   color: #9356DC;
   transform-origin: center;
-  animation: element 2250ms ease-in-out forwards;
+  animation: element 2250ms ease-in-out forwards alternate;
 }
 
 @keyframes background-div {
