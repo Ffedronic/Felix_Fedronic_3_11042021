@@ -11,7 +11,7 @@
 .restaurant-menu {
     @include flex (column) ;
     &__image {
-        height: $restaurant-list__card__main__image-height*1.5;
+        height: 285px;
         width: 100%;
         z-index: -999 ;
         img {
