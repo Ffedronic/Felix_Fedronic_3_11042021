@@ -246,12 +246,15 @@ button:hover {
   font-size: 3.5em;
   color: #9356DC;
   transform-origin: center;
-  animation: element 2250ms ease-in-out forwards alternate;
+  animation: element 1000ms 3 ease-in-out forwards alternate;
 }
 
 @keyframes background-div {
   0% {
     opacity: 0.5;
+  }
+  98% {
+    opacity: 0.1;
   }
   100% {
     opacity: 0;
@@ -270,21 +273,11 @@ button:hover {
   }
 }
 @keyframes element {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  75% {
-    transform: scale(1);
-  }
-  95% {
-    transform: scale(3);
-  }
-  100% {
-    transform: scale(0);
+  0%, 50%, 100% {
     opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
   }
 }
 .header-homepage__logo {
